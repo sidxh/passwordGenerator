@@ -9,7 +9,7 @@ html {
 }
 
 #head-el{
-    padding: 6rem 10rem 2rem 10rem;
+    padding: 1.2em 2em 0.4em 2em;
     font-size: 5rem;
     font-family: 'Karla', sans-serif;
     color:white;
@@ -18,15 +18,15 @@ html {
 }
 
 #descp-el{
-    padding: 0 10rem;
+    padding: 0 4em;
     font-size: 2.6rem;
     font-family: 'Inter', sans-serif;
     color: #D5D4D8;
 }
 
 #genbut-el{
-    margin: 5rem 10rem 4rem 10rem;
-    padding: 10px 20px;
+    margin: 2.5em 5em 2em 5em;
+    padding: 0.4em 0.8em;
     background-color: #FCD34D;
     font-size: 2rem;
     border:none;
@@ -38,7 +38,7 @@ html {
 .hr-line{
     width: 78%;
     border-top: 1px solid #FDA4AF;
-    margin: 0 10rem;
+    margin: 0 10em;
 }
 
 .passwords{
@@ -47,14 +47,49 @@ html {
 }
 
 #passDiv1 , #passDiv2 {
-    margin: 4rem 0 3rem 10rem;
-    padding: 10px 20px;
+    margin: 2em 5em 1.5em 5em;
+    padding: 0.4em 0.8em;
     background-color: #F43F5E;
     border-radius: 6px;
-    width: 25rem;
-    height: 4rem;
+    width: 12.5em;
+    height: 2em;
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-size: 2rem;
     color: #FCD34D;
+}
+
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #head-el{
+        padding: 2em 0.25em 1.25em 0.25em;
+    }
+
+    #descp-el{
+        padding: 0;
+    }
+
+    #genbut-el{
+        margin: 2.5em 0;
+    }
+
+    .hr-line{
+        width: 95%;
+        margin: 0 0.25em 2.5em 0.25em;
+    }
+
+    .passwords{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6em;
+    }
+
+    #passDiv1 , #passDiv2{
+        margin: 1em 1.25em;
+    }
+
 }
